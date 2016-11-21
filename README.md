@@ -14,8 +14,12 @@ including:
 
 6. greedly sort job with deadline and benefits
 
-7. optimal binary search tree
+7. prim algorithm
 
-8. 0/1 knapsack problem
+8. kruskal algorithm
+
+9. optimal binary search tree
+
+10. 0/1 knapsack problem
 
 
