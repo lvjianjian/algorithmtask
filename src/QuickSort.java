@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  * Created by lzj on 2016/11/2.
@@ -45,9 +44,7 @@ public class QuickSort {
             } while (A[j] > temp);
 
             if (i < j) {//交换
-                int v = A[i];
-                A[i] = A[j];
-                A[j] = v;
+                Tool.interChange(A,i,j);
             }
         }
 

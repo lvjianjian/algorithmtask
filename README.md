@@ -10,18 +10,18 @@ including:
 
 4. quick sort for array => QuickSort
 
-5.1 insertionsort => InsertiongSort
+5. insertionsort => InsertiongSort
 
-5.2 choose k-th minimum value (call insertionsort) in array (100,000 values), and record time => Select
+6. choose k-th minimum value (call insertionsort) in array (100,000 values), and record time => Select
 
-6. greedly sort job with deadline and benefits
+7. greedly sort job with deadline and benefits
 
-7. prim algorithm
+8. prim algorithm
 
-8. kruskal algorithm
+9. kruskal algorithm
 
-9. optimal binary search tree
+10. optimal binary search tree
 
-10. 0/1 knapsack problem
+11. 0/1 knapsack problem
 
 

@@ -30,6 +30,18 @@ public class Tool {
 
     }
 
+    /**
+     * 将A中下标i与下标j对应的元素互换
+     * @param A
+     * @param i
+     * @param j
+     */
+    public static void interChange(int[] A, int i, int j) {
+        int v = A[i];
+        A[i] = A[j];
+        A[j] = v;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(randomArray(100, 10, 20)));
