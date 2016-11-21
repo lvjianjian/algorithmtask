@@ -6,6 +6,16 @@ including:
 
 2. caculate greatest common divisor of two numbers recursively
 
-3. binary search for sorted array recursively \n
+3. binary search for sorted array recursively
+
 4. quick sort for array
+
+5. choose k-th minimum value in array (100,000 values), and record time
+
+6. greedly sort job with deadline and benefits
+
+7. optimal binary search tree
+
+8. 0/1 knapsack problem
+
 
