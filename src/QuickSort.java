@@ -30,7 +30,7 @@ public class QuickSort {
      * @param A 数组
      * @param m 最小下标
      * @param j 最大下标 + 1
-     * @return
+     * @return 划分下标（0开始）
      */
     public static int partition(int[] A, int m, int j) {
         int temp = A[m];
@@ -67,8 +67,6 @@ public class QuickSort {
             System.out.println(Arrays.toString(A));
             System.out.println();
         }
-
-
 
     }
 
