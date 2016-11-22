@@ -6,6 +6,8 @@ import java.util.Arrays;
  */
 public class Select {
 
+    public static int TYPE_SELECTK = 1;
+    public static int TYPE_SELECTK2 = 2;
 
     /**
      * 从数组A中选择第k小的元素（k>=1 and k<A.length）
@@ -76,16 +78,21 @@ public class Select {
         }
     }
 
+    public static void run(int[] A, int k, int type, int r) {
+        long start = System.currentTimeMillis();
+        int x = 0;
+        if (type == 1) {
+            x = selectK(A, k);
+        } else {
+            x = selectK2(A, k, 0, A.length - 1, r);
+        }
+        System.out.println("use time:" + (System.currentTimeMillis() - start) + "ms");
+    }
+
 
     public static void main(String[] args) {
-        int[] A = Tool.randomArray(100000, -100000, 100000);
+        int[] A = Tool.randomArray(10000000, -10000000, 10000000);
         int[] clone = A.clone();
-        int x = selectK(A, 50000);
-        System.out.println(x);
-        System.out.println(A[x]);
-
-        int y = selectK2(clone, 50000, 0, clone.length - 1, 25);
-        System.out.println(y);
-        System.out.println(A[y]);
+        run(clone, 500000, Select.TYPE_SELECTK2, 20);
     }
 }
