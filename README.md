@@ -14,9 +14,9 @@ including:
 
 6. choose k-th minimum value (call insertionsort) in array (100,000 values), and record time => Select
 
-7. greedly sort job with deadline and benefits
+7. greedly sort job with deadline and benefits => JS
 
-8. prim algorithm
+8. prim algorithm => Prim
 
 9. kruskal algorithm
 
