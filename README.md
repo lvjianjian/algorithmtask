@@ -18,7 +18,7 @@ including:
 
 8. prim algorithm => Prim
 
-9. kruskal algorithm
+9. kruskal algorithm => Kruskal
 
 10. optimal binary search tree
 
