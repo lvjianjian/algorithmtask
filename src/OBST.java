@@ -1,7 +1,7 @@
 /**
  * Created by zhongjian on 2016/11/23.
  * <p>
- * 最优二分检索树
+ * 最优二分检索树，动态规划
  */
 public class OBST {
 
