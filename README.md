@@ -20,7 +20,7 @@ including:
 
 9. kruskal algorithm => Kruskal
 
-10. optimal binary search tree
+10. optimal binary search tree => OBST
 
 11. 0/1 knapsack problem
 
