@@ -22,7 +22,7 @@ public class Max {
 
 
     public static void main(String[] args) {
-        System.out.println(max(new double[]{1,3,5.7,2,-100,2321},0));
+        System.out.println(max(new double[]{1,3,5.7,2,-100,23212},0));
         System.out.println(max(new double[]{-1,111,5.7,1111111,-100,2321},0));
         System.out.println(max(new double[]{21321312,3,5.7,2,-100,2321},0));
     }
