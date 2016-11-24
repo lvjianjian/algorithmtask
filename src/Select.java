@@ -92,7 +92,7 @@ public class Select {
 
     public static void main(String[] args) {
         int[] A = Tool.randomArray(10000000, -10000000, 10000000);
-        int[] clone = A.clone();
-        run(clone, 500000, Select.TYPE_SELECTK2, 20);
+        run(A, 10000000, Select.TYPE_SELECTK2, 20);
+        run(new int[]{-111,8,1,3,6,7,-10,100,99,-100},10,Select.TYPE_SELECTK,0);
     }
 }

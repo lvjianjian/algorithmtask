@@ -37,7 +37,7 @@ public class QuickSort {
         while (i < j) {
             do {
                 ++i;
-            } while (A[i] < temp && i < j - 1);
+            } while (i < j - 1 && A[i] < temp); //i < j - 1 放在前面防止A[i]越界
 
             do {
                 --j;
