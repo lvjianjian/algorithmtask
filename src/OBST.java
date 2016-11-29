@@ -99,7 +99,7 @@ public class OBST {
                 //求k
                 int k = -1;
                 int min = Integer.MAX_VALUE;
-                for (int l = i + 1; l < j; l++) {
+                for (int l = i + 1; l <=  j; l++) {
                     int temp = C[i][l - 1] + C[l][j];
                     if (temp < min) {
                         k = l;
