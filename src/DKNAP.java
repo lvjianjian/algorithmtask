@@ -106,30 +106,39 @@ public class DKNAP {
         x = new int[n];
         int px = P.get(P.size() - 1);
         int wx = W.get(W.size() - 1);
-        int py;
+//        int py;
         for (int i = n - 1; i >= 0; --i) {
             int high = F[i + 1];
             int low = F[i];
-            int index = -1;
-            int max = -1;
-            for (int j = high - 1; j >= low; --j) {
-                if (W.get(j) <= (wx - w[i]) && W.get(j) > max) {
-                    index = j;
+//            int index = -1;
+//            int max = -1;
+            for (int j = high - 1; j >= low; --j) {//在前一个S中寻找是否有px，wx，若有，则x置为0，若无则是新加入的，x置为1
+//                if (W.get(j) <= (wx - w[i]) && W.get(j) > max) {
+//                    index = j;
+//                    break;
+//                }
+                x[i] = 1;
+                if(px == P.get(j) && wx == W.get(j)){//在前一个S中
+                    x[i] = 0;
                     break;
                 }
             }
-            if (index == -1) {
-                x[i] = 0;
-                continue;
+            if(x[i] == 1){
+                px = px - p[i];
+                wx -= w[i];
             }
-            py = P.get(index) + p[i];
-            if(px > py){
-                x[i] = 0;
-            }else{
-                x[i] = 1;
-                px = P.get(index);
-                wx = W.get(index);
-            }
+//            if (index == -1) {
+//                x[i] = 0;
+//                continue;
+//            }
+//            py = P.get(index) + p[i];
+//            if(px > py){
+//                x[i] = 0;
+//            }else{
+//                x[i] = 1;
+//                px = P.get(index);
+//                wx = W.get(index);
+//            }
 
         }
 
