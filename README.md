@@ -20,8 +20,10 @@ including:
 
 9. kruskal algorithm => Kruskal
 
-10. optimal binary search tree => OBST
+10. multistage graph, forward process => FGRAPH
 
-11. 0/1 knapsack problem => DKNAP
+11. optimal binary search tree => OBST
 
+12. 0/1 knapsack problem => DKNAP
 
+13. biconnected graph => ART
