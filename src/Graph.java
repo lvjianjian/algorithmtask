@@ -53,7 +53,7 @@ public class Graph {
         this.type = type;
         this.cost = new int[n][n];
         for (int i = 0; i < n; i++) {
-            Arrays.fill(cost[i],Graph.INFINITE); // 初始为无穷大
+            Arrays.fill(cost[i], Graph.INFINITE); // 初始为无穷大
         }
     }
 
@@ -68,6 +68,17 @@ public class Graph {
         if (type == TYPE_UNDIRECTED)
             this.cost[j - 1][i - 1] = cost;
         return this;
+    }
+
+    /**
+     * 添加所有边
+     *
+     * @param edges 一个e行3列的数组，列分别是起点，终点，代价
+     */
+    public void addAllEdges(int[][] edges) {
+        for (int i = 0; i < edges.length; i++) {
+            this.addEdge(edges[i][0], edges[i][1], edges[i][2]);
+        }
     }
 
     /**
@@ -91,6 +102,7 @@ public class Graph {
 
     /**
      * 获取变（i，j）上的权值代价
+     *
      * @param i
      * @param j
      * @return
@@ -98,7 +110,6 @@ public class Graph {
     public int getCost(int i, int j) {
         return cost[i - 1][j - 1];
     }
-
 
 
 }
