@@ -26,4 +26,4 @@ including:
 
 12. 0/1 knapsack problem => DKNAP
 
-13. biconnected graph => ART
+13. biconnected graph => BiConnectedGraph 

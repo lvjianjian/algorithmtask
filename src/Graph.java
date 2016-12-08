@@ -112,4 +112,18 @@ public class Graph {
     }
 
 
+    /**
+     * 判断顶点i和顶点j之间是否有边
+     *
+     * @param i
+     * @param j
+     * @return 有边返回true，无边返回false
+     */
+    public boolean hasEdge(int i, int j) {
+        if (getCost(i, j) != Graph.INFINITE)
+            return true;
+        else
+            return false;
+    }
+
 }
