@@ -24,6 +24,8 @@ including:
 
 11. optimal binary search tree => OBST
 
-12. 0/1 knapsack problem => DKNAP
+12. 0/1 knapsack problem, dynamic planning method => DKNAP
 
-13. biconnected graph => BiConnectedGraph 
+13. biconnected graph => BiConnectedGraph
+
+14. 0/1 knapsack problem, trace back method => BKNAP1
