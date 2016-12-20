@@ -29,3 +29,5 @@ including:
 13. biconnected graph => BiConnectedGraph
 
 14. 0/1 knapsack problem, trace back method => BKNAP1
+
+15. 0/1 knapsack problem, branch and bound method => LCKNAP
