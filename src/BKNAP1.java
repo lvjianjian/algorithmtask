@@ -67,7 +67,7 @@ public class BKNAP1 {
     }
 
     private void back1(int M, int cw, int cp, int k, int[] y) {
-        if (k >= n) {
+        if (k > n) {
             if (cp > this.fp) {
                 this.fp = cp;
                 this.fw = cw;
@@ -132,6 +132,10 @@ public class BKNAP1 {
         BKNAP1 bknap1 = new BKNAP1(3, new int[]{1, 2, 5}, new int[]{2, 3, 4});
         bknap1.set(8, new int[]{11, 21, 31, 33, 43, 53, 55, 65}, new int[]{1, 11, 21, 23, 33, 43, 45, 55});
         bknap1.BKNAP1(110);
+        bknap1.print();
+
+        bknap1.set(4, new int[]{8, 5, 2, 1}, new int[]{6,15,10,9});
+        bknap1.BKNAP1(30);
         bknap1.print();
 //        System.out.println(bknap1.count);
     }
